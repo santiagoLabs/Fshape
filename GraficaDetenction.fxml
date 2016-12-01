@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="395.0" prefWidth="622.0" style="-fx-background-color: #F5F5F5;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FXController">
+   <top>
+      <VBox prefHeight="39.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" depthTest="ENABLE" pickOnBounds="false" prefHeight="47.0" prefWidth="660.0">
+               <children>
+                  <JFXCheckBox fx:id="haarClassifier" checkedColor="#00c853" contentDisplay="TOP" graphicTextGap="6.0" onAction="#haarSelected" text="Rileva volti" unCheckedColor="BLACK">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <font>
+                        <Font name="Roboto Bold" size="13.0" />
+                     </font>
+                  </JFXCheckBox>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <VBox alignment="CENTER" prefHeight="419.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="originalFrame" fitHeight="277.0" fitWidth="381.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" />
+            <JFXSlider fx:id="slider" prefHeight="43.0" prefWidth="657.0" value="50.0" />
+         </children>
+      </VBox>
+   </center>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="60.0" prefWidth="605.0" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton fx:id="btn_start" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" onAction="#startCamera" prefHeight="47.0" prefWidth="123.0" ripplerFill="BLACK" style="-fx-background-color: #00C853;" text="Start Camera" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>
